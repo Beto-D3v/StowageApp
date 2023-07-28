@@ -1,0 +1,57 @@
+﻿@page "/filestowages/Edit/{id}"
+@using StowageApp.Shared.Entities;
+@using System.Net.Http.Json;
+@inject HttpClient http
+@inject NavigationManager navigation
+
+<h2>Edit File</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <h4>File Name</h4>
+            <div class="form-group">
+                <label asp-for="FileName" class="control-label"></label>
+                <input asp-for="FileName" class="form-control" asp-action="Edit" @bind-value="@fileStowage.FileName" ValidationMessage For="@(() => fileStowage.FileName)"/>
+                <span asp-validation-for="FileName" class="text-danger"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" @onclick="EditFiles" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<button>
+    <a asp-action="Index" @onclick="NavigateToIndexPage">Back to List</a>
+</button>
+
+
+
+@code {
+    [Parameter]
+    public string ID { get; set; }
+
+    FileStowage fileStowage = new FileStowage();
+
+    protected async override Task OnParametersSetAsync()
+    {
+        var fileId = Guid.Parse(ID);
+        fileStowage = await http.GetFromJsonAsync<FileStowage>($"api/filestowage/{fileId}");
+    }
+
+    async Task EditFiles()
+    {
+        await http.PutAsJsonAsync("api/filestowage", fileStowage);
+    }
+
+    private void NavigateToIndexPage()
+    {
+        var editPageUri = "filestowages";
+        navigation.NavigateTo(editPageUri);
+    }
+
+}

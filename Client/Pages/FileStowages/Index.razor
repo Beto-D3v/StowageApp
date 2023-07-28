@@ -1,0 +1,74 @@
+﻿@page "/filestowages"
+@using StowageApp.Shared.Entities
+@using System.Net.Http.Json
+@inject HttpClient http
+@inject NavigationManager _navigationManager
+
+
+<h2>FileStowages</h2>
+
+<input type="file" id="inputUpload" class="form-controle-file" />
+
+@if(fileStowages == null)
+{
+    <p>Carregando...</p>
+}
+else if(fileStowages.Length == 0)
+{
+    <p>Não existem arquivos cadastrados</p>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>FileName</th>
+            <th>FileSize</th>
+            <th>RemotePath</th>
+            <th>UploadDate</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        @foreach (var filestowage in fileStowages)
+        {
+            <tbody>
+                <tr>
+                    <td>@filestowage.FileName</td>
+                    <td>@filestowage.FileSize</td>
+                    <td>@filestowage.RemotePath</td>
+                    <td>@filestowage.UploadDate</td>
+                    <td>
+                        <button class="btn btn-primary"><a @onclick="() => NavigateToEditPage(filestowage.ID)"> Edit</a></button>
+                    </td>
+                    <td>
+                        <button class="btn btn-danger"><a @onclick="@(async() => await DeleteFile(filestowage.ID))"> Delete</a></button>
+                    </td>
+                </tr>
+            </tbody>
+        }
+    </table>
+}
+
+@code {
+
+    FileStowage[]? fileStowages { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadFilesStowage();
+    }
+
+    async Task LoadFilesStowage() => fileStowages = await http.GetFromJsonAsync<FileStowage[]>("/api/filestowage");
+
+    private void NavigateToEditPage(Guid id)
+    {
+        var editPageUri = $"filestowages/Edit/{id}";
+        _navigationManager.NavigateTo(editPageUri);
+    }
+
+    async Task DeleteFile(Guid id)
+    {
+        await http.DeleteFromJsonAsync<FileStowage>($"/api/filestowage/{id}");
+        await LoadFilesStowage();
+    }
+
+}

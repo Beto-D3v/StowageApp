@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "bK4W2Dx83Ql4fSHGdbnBv9t6+m/JRZBuOcpr3A360JZz9jcN48bIqic4nH0YfjXuM/utEXmC+d4zDM668iNOuw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Shared\\StowageApp.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\windows\\.nuget\\packages\\stowage\\1.2.6\\stowage.1.2.6.nupkg.sha512",
+    "C:\\Users\\windows\\.nuget\\packages\\system.net.http.json\\7.0.1\\system.net.http.json.7.0.1.nupkg.sha512",
+    "C:\\Users\\windows\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\windows\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
