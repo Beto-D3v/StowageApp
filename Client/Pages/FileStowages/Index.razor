@@ -2,12 +2,20 @@
 @using StowageApp.Shared.Entities
 @using System.Net.Http.Json
 @inject HttpClient http
+@inject MyStorageBase storageService
 @inject NavigationManager _navigationManager
 
 
 <h2>FileStowages</h2>
 
-<input type="file" id="inputUpload" class="form-controle-file" />
+<form @onsubmit="OnSubmit">
+    <InputFile class="form-control" OnChange="OnInputFileChange" />
+    @Message
+    <br/>
+    <button class="btn btn-success" type="submit">Enviar</button>
+</form>
+
+<br />
 
 @if(fileStowages == null)
 {
@@ -51,6 +59,8 @@ else
 @code {
 
     FileStowage[]? fileStowages { get; set; }
+    string Message = "Sem arquivo selecionado";
+    IReadOnlyList<IBrowserFile>? selectedFiles;
 
     protected override async Task OnInitializedAsync()
     {
@@ -71,4 +81,39 @@ else
         await LoadFilesStowage();
     }
 
+    void OnInputFileChange(InputFileChangeEventArgs args)
+    {
+        selectedFiles = args.GetMultipleFiles();
+        Message = $"{selectedFiles.Count} arquivos selecionados";
+        StateHasChanged();
+    }
+
+    async Task OnSubmit()
+    {
+        if (selectedFiles == null || selectedFiles.Count == 0)
+            return;
+        
+        byte[] bytes;
+
+        foreach (var file in selectedFiles)
+        {
+            using (Stream stream = file.OpenReadStream())
+            {
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    await stream.CopyToAsync(memoryStream);
+                    bytes = memoryStream.ToArray();
+                }
+            }
+            var form = new MultipartFormDataContent();
+            form.Add(new ByteArrayContent(bytes, 0, bytes.Length), "File", file.Name);
+            var response = await http.PostAsync("/api/filestowage",form);
+            response.EnsureSuccessStatusCode();
+        }
+
+        Message = $" O arquivo foi salvo com sucesso!";
+        await LoadFilesStowage();
+    }
 }
+
+

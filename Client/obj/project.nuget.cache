@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aTKjPkgbyXoIC4PEbeFtEWCo3a4xh44z/CooUtAnlNePRfzDTCroZyHnCpHO1TYKecb5KSvcY8clLwEubiVHRw==",
+  "dgSpecHash": "s67uz4a8uUDdvslZeMYcE+Ko+Wki4CEf43La2gHDhPN0oHbj13RxDT8FwQJsFPcVignbZZdlKrz0vH6wVlEh6g==",
   "success": true,
   "projectFilePath": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\StowageApp.Client.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\windows\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\windows\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\7.0.0\\microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512",
     "C:\\Users\\windows\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
+    "C:\\Users\\windows\\.nuget\\packages\\microsoft.extensions.http\\7.0.0\\microsoft.extensions.http.7.0.0.nupkg.sha512",
     "C:\\Users\\windows\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "C:\\Users\\windows\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
     "C:\\Users\\windows\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",

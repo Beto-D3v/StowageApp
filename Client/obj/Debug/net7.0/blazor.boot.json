@@ -24,6 +24,7 @@
       "Microsoft.Extensions.FileProviders.Abstractions.dll": "sha256-Zt6OY6gg\/1Tzt9oFOQBkezPvUVkFK4dyM6Pfk+MTUvg=",
       "Microsoft.Extensions.FileProviders.Physical.dll": "sha256-9xkIbIienaRj9Td2MyWYzL9JmVx6CKbGCPrvJ1Pxfn8=",
       "Microsoft.Extensions.FileSystemGlobbing.dll": "sha256-Gm0yiS5fySh2nZXdCRKZIbASK8sSukwjogLc+a9EBZY=",
+      "Microsoft.Extensions.Http.dll": "sha256-QqjUvBFxKOeh8XX3IrmuIesFycYZMmwrhsRakmXvrXE=",
       "Microsoft.Extensions.Logging.dll": "sha256-WMsuY8rhtg+vvssGFSR7ZLKhqYPAzOi538IXMoiJ6bI=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-7mzUlhcvGxpAVO4h\/Tka7P\/8IXF9ZsHkGt0fp5aufkU=",
       "Microsoft.Extensions.Options.dll": "sha256-gcHJrSv1wTqvF9SyWTEKcbiShn4mkgfnm9+tRQr4OqY=",
@@ -202,15 +203,15 @@
       "mscorlib.dll": "sha256-t1RT9mknsQ54H+sVa1vtMhjv3D8ZjiAGoLzHvuIObPw=",
       "netstandard.dll": "sha256-5SHKPh1PcuJjq4lIo7ymdIyhb9d3++oMAjr46auhUSc=",
       "System.Private.CoreLib.dll": "sha256-eH+XIsCUG5oZ0k8AIzNtRLTCLiV\/8Zv0RFCPMsIkdYY=",
-      "StowageApp.Shared.dll": "sha256-6QO33heLKXP7iUEdeZ8MIvNbGQX4FYATPRSvqcYeZDg=",
-      "StowageApp.Client.dll": "sha256-VNMIiG8hIdDFc8zikke4qHld2LFTFnlEcGkHCyoWBNY="
+      "StowageApp.Shared.dll": "sha256-dkjaDgnb0hefEBJq7fht6wWigY3FqBaVFa2vPNNtRLg=",
+      "StowageApp.Client.dll": "sha256-mSOlrYacWg64YmG+m5qtXd3II2nVhwSC35ld\/Iol9hI="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "StowageApp.Shared.pdb": "sha256-PSK4mFEv4Ry5v79PViQJiU1GuSuX1LSbysfTJjGpLkY=",
-      "StowageApp.Client.pdb": "sha256-l4tnDeZXHxM0xBIWejuHgCbGmZ+mwWZgkMKQ\/txJpOE="
+      "StowageApp.Shared.pdb": "sha256-B5LcgEW6Jj\/rfK39TUzIYoeRFjnnaAc\/2BH5pO3paT8=",
+      "StowageApp.Client.pdb": "sha256-UPrtQCAypIArIAW\/iiKJlMKGoUUTZrTBKbyV0VP2xP8="
     },
     "runtime": {
       "dotnet.7.0.9.ibpao9fg3f.js": "sha256-dUIY5Mz0ozZWqtTfBb7ArJKbdh5IIp8BXeq6UjK4u\/c=",

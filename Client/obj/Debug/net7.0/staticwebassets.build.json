@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "r5gZu7IncXcMC4VZMULvchGo+9FtaXXefUc0upYFypI=",
+  "Hash": "mjCAqyYzbs6bhefm6wBNg4NNRri/9LkxdmZd1+jEyfw=",
   "Source": "StowageApp.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -457,6 +457,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\windows\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.FileSystemGlobbing.dll"
+    },
+    {
+      "Identity": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.dll",
+      "SourceId": "StowageApp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Http.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\windows\\.nuget\\packages\\microsoft.extensions.http\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Http.dll"
     },
     {
       "Identity": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
@@ -4435,6 +4452,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.dll"
+    },
+    {
+      "Identity": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\obj\\Debug\\net7.0\\build-gz\\cDkLpJm1.gz",
+      "SourceId": "StowageApp.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Http.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.dll"
     },
     {
       "Identity": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\obj\\Debug\\net7.0\\build-gz\\CEIcoLki.gz",

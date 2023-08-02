@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using StowageApp.Server.Data;
 using StowageApp.Server.Services;
+using StowageApp.Shared.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,14 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<FileStowageContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<SeedingServices>();
+
+//builder.Services.AddScoped<IStorageService, LocalStorageService>();
+
+builder.Services.AddScoped<MyStorageBase, MyLocalDiskStorage>(provider =>
+{
+    string rootDir = @"C:\Users\windows\Desktop\C#\Files";
+    return new MyLocalDiskStorage(rootDir);
+});
 
 var app = builder.Build();
 
@@ -45,5 +54,12 @@ using (var scope = app.Services.CreateScope())
     var seedingService = services.GetRequiredService<SeedingServices>();
     seedingService.Seed();
 }
+
+app.UseCors(builder =>
+{
+    builder.AllowAnyOrigin();
+    builder.AllowAnyMethod();
+    builder.AllowAnyHeader();
+});
 
 app.Run();

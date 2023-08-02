@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[7.0.9, )"
             },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Stowage": {
               "target": "Package",
               "version": "[1.2.6, )"
@@ -143,6 +147,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
             "Stowage": {
               "target": "Package",
               "version": "[1.2.6, )"

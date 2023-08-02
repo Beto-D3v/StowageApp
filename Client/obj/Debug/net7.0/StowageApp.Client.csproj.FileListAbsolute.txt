@@ -850,3 +850,7 @@ C:\Users\windows\Desktop\C#\Stowage\StowageApp\Client\bin\Debug\net7.0\wwwroot\_
 C:\Users\windows\Desktop\C#\Stowage\StowageApp\Client\bin\Debug\net7.0\wwwroot\_framework\Stowage.dll.gz
 C:\Users\windows\Desktop\C#\Stowage\StowageApp\Client\bin\Debug\net7.0\Stowage.dll
 C:\Users\windows\Desktop\C#\Stowage\StowageApp\Client\obj\Debug\net7.0\build-gz\MHUKLgWj.gz
+C:\Users\windows\Desktop\C#\Stowage\StowageApp\Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Http.dll
+C:\Users\windows\Desktop\C#\Stowage\StowageApp\Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Http.dll.gz
+C:\Users\windows\Desktop\C#\Stowage\StowageApp\Client\bin\Debug\net7.0\Microsoft.Extensions.Http.dll
+C:\Users\windows\Desktop\C#\Stowage\StowageApp\Client\obj\Debug\net7.0\build-gz\cDkLpJm1.gz
