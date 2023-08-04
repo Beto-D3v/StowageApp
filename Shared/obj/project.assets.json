@@ -766,26 +766,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\windows\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\roberto.macedo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Shared\\StowageApp.Shared.csproj",
+      "projectUniqueName": "D:\\Wetok\\projetos\\StowageApp\\Shared\\StowageApp.Shared.csproj",
       "projectName": "StowageApp.Shared",
-      "projectPath": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Shared\\StowageApp.Shared.csproj",
-      "packagesPath": "C:\\Users\\windows\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Shared\\obj\\",
+      "projectPath": "D:\\Wetok\\projetos\\StowageApp\\Shared\\StowageApp.Shared.csproj",
+      "packagesPath": "C:\\Users\\roberto.macedo\\.nuget\\packages\\",
+      "outputPath": "D:\\Wetok\\projetos\\StowageApp\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\roberto.macedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

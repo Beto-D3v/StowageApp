@@ -10,3 +10,15 @@ C:\Users\windows\Desktop\C#\Stowage\StowageApp\Shared\obj\Debug\net7.0\StowageAp
 C:\Users\windows\Desktop\C#\Stowage\StowageApp\Shared\obj\Debug\net7.0\refint\StowageApp.Shared.dll
 C:\Users\windows\Desktop\C#\Stowage\StowageApp\Shared\obj\Debug\net7.0\StowageApp.Shared.pdb
 C:\Users\windows\Desktop\C#\Stowage\StowageApp\Shared\obj\Debug\net7.0\ref\StowageApp.Shared.dll
+D:\Wetok\projetos\StowageApp\Shared\bin\Debug\net7.0\StowageApp.Shared.deps.json
+D:\Wetok\projetos\StowageApp\Shared\bin\Debug\net7.0\StowageApp.Shared.dll
+D:\Wetok\projetos\StowageApp\Shared\bin\Debug\net7.0\StowageApp.Shared.pdb
+D:\Wetok\projetos\StowageApp\Shared\obj\Debug\net7.0\StowageApp.Shared.csproj.AssemblyReference.cache
+D:\Wetok\projetos\StowageApp\Shared\obj\Debug\net7.0\StowageApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Wetok\projetos\StowageApp\Shared\obj\Debug\net7.0\StowageApp.Shared.AssemblyInfoInputs.cache
+D:\Wetok\projetos\StowageApp\Shared\obj\Debug\net7.0\StowageApp.Shared.AssemblyInfo.cs
+D:\Wetok\projetos\StowageApp\Shared\obj\Debug\net7.0\StowageApp.Shared.csproj.CoreCompileInputs.cache
+D:\Wetok\projetos\StowageApp\Shared\obj\Debug\net7.0\StowageApp.Shared.dll
+D:\Wetok\projetos\StowageApp\Shared\obj\Debug\net7.0\refint\StowageApp.Shared.dll
+D:\Wetok\projetos\StowageApp\Shared\obj\Debug\net7.0\StowageApp.Shared.pdb
+D:\Wetok\projetos\StowageApp\Shared\obj\Debug\net7.0\ref\StowageApp.Shared.dll

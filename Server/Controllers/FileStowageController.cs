@@ -16,6 +16,7 @@ namespace StowageApp.Server.Controllers
     {
         private readonly FileStowageContext _context;
         private readonly MyStorageBase _storageService;
+        private string rootDir = @"D:\Roberto_Macedo\Files";
         public FileStowageController(FileStowageContext context, MyStorageBase storageService)
         {
             _context = context;
@@ -58,8 +59,11 @@ namespace StowageApp.Server.Controllers
         {
             var file = await _context.FileStowages.FirstOrDefaultAsync(item => item.ID == id);
             _context.Remove(file);
-            var remotePath = Path.Combine($@"C:\Users\windows\Desktop\C#\Files\", file.FileName);
-            await _storageService.DeleteAsync(remotePath);
+            //var remotePath = Path.Combine(rootDir, file.FileName);
+            //if (!string.IsNullOrEmpty(remotePath))
+            //{
+            //    await _storageService.DeleteAsync(remotePath);
+            //}
             await _context.SaveChangesAsync();
             return Ok(file);
         }
@@ -70,7 +74,7 @@ namespace StowageApp.Server.Controllers
             try
             {
                 // Salva o arquivo usando a instância de MyStorageBase
-                var remotePath = Path.Combine($@"C:\Users\windows\Desktop\C#\Files\", file.FileName);
+                var remotePath = Path.Combine(rootDir, file.FileName);
                 await _storageService.UploadAsync(file.OpenReadStream(), remotePath);
 
   
@@ -78,7 +82,7 @@ namespace StowageApp.Server.Controllers
                 {
                     FileName = file.FileName,
                     FileSize = (int)file.Length,
-                    RemotePath = $@"C:\Users\windows\Desktop\C#\Files\",
+                    RemotePath = rootDir,
                     UploadDate = DateTime.Now
                 };
 

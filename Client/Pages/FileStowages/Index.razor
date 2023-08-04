@@ -4,6 +4,7 @@
 @inject HttpClient http
 @inject MyStorageBase storageService
 @inject NavigationManager _navigationManager
+@inject IJSRuntime JS
 
 
 <h2>FileStowages</h2>
@@ -35,6 +36,7 @@ else
             <th>UploadDate</th>
             <th>Edit</th>
             <th>Delete</th>
+            <th>Download</th>
         </tr>
         @foreach (var filestowage in fileStowages)
         {
@@ -49,6 +51,16 @@ else
                     </td>
                     <td>
                         <button class="btn btn-danger"><a @onclick="@(async() => await DeleteFile(filestowage.ID))"> Delete</a></button>
+                    </td>
+                    <td>
+                        @if (filestowage.RemotePath.StartsWith("file:///"))
+                        {
+                            <a class="btn btn-primary" href="@filestowage.RemotePath" download="@filestowage.FileName">Download</a>
+                        }
+                        else
+                        {
+                            <button class="btn btn-primary" @onclick="@(async () => await DownloadFileFromURL(filestowage.FileName, filestowage.RemotePath))">Download</button>
+                        }
                     </td>
                 </tr>
             </tbody>
@@ -88,6 +100,12 @@ else
         StateHasChanged();
     }
 
+    private async Task DownloadFileFromURL(string fileName, string remotePath)
+    {
+        var fileUrl = $"{remotePath}/{fileName}";
+        await JS.InvokeVoidAsync("triggerFileDownload", fileName, fileUrl);
+    }
+
     async Task OnSubmit()
     {
         if (selectedFiles == null || selectedFiles.Count == 0)
@@ -115,5 +133,7 @@ else
         await LoadFilesStowage();
     }
 }
+
+
 
 

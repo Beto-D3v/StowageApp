@@ -86,6 +86,20 @@ public abstract class MyStorageBase : IDisposable
         }
     }
 
+
+    //public async Task RenameFileAsync(string remotePath, string newName)
+    //{
+    //    var fs = GetStorage();
+
+    //    using (var destStream = await fs.OpenWrite(remotePath))
+    //    {
+    //        await fs.Ren(remotePath, newName);
+    //        await DeleteAsync(remotePath);
+    //        await destStream.FlushAsync();
+    //    }
+    //}
+
+
     public async Task<Stream> OpenAsync(string remotePath)
     {
         var fs = GetStorage();

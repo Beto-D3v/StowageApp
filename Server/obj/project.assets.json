@@ -8748,26 +8748,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\windows\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\roberto.macedo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Server\\StowageApp.Server.csproj",
+      "projectUniqueName": "D:\\Wetok\\projetos\\StowageApp\\Server\\StowageApp.Server.csproj",
       "projectName": "StowageApp.Server",
-      "projectPath": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Server\\StowageApp.Server.csproj",
-      "packagesPath": "C:\\Users\\windows\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Server\\obj\\",
+      "projectPath": "D:\\Wetok\\projetos\\StowageApp\\Server\\StowageApp.Server.csproj",
+      "packagesPath": "C:\\Users\\roberto.macedo\\.nuget\\packages\\",
+      "outputPath": "D:\\Wetok\\projetos\\StowageApp\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\roberto.macedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8782,11 +8779,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\StowageApp.Client.csproj": {
-              "projectPath": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\StowageApp.Client.csproj"
+            "D:\\Wetok\\projetos\\StowageApp\\Client\\StowageApp.Client.csproj": {
+              "projectPath": "D:\\Wetok\\projetos\\StowageApp\\Client\\StowageApp.Client.csproj"
             },
-            "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Shared\\StowageApp.Shared.csproj": {
-              "projectPath": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Shared\\StowageApp.Shared.csproj"
+            "D:\\Wetok\\projetos\\StowageApp\\Shared\\StowageApp.Shared.csproj": {
+              "projectPath": "D:\\Wetok\\projetos\\StowageApp\\Shared\\StowageApp.Shared.csproj"
             }
           }
         }

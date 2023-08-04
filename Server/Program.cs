@@ -18,7 +18,8 @@ builder.Services.AddScoped<SeedingServices>();
 
 builder.Services.AddScoped<MyStorageBase, MyLocalDiskStorage>(provider =>
 {
-    string rootDir = @"C:\Users\windows\Desktop\C#\Files";
+    //string rootDir = @"C:\Users\windows\Desktop\C#\Files";
+    string rootDir = @"D:\Roberto_Macedo\Files";
     return new MyLocalDiskStorage(rootDir);
 });
 
