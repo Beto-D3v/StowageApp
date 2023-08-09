@@ -16,7 +16,7 @@ namespace StowageApp.Server.Controllers
     {
         private readonly FileStowageContext _context;
         private readonly MyStorageBase _storageService;
-        private string rootDir = @"D:\Roberto_Macedo\Files";
+        private string rootDir = @"C:\Users\windows\Desktop\C#\Stowage\StowageApp\Client\wwwroot\Folder";
         public FileStowageController(FileStowageContext context, MyStorageBase storageService)
         {
             _context = context;
@@ -73,11 +73,12 @@ namespace StowageApp.Server.Controllers
         {
             try
             {
-                // Salva o arquivo usando a instância de MyStorageBase
+              
                 var remotePath = Path.Combine(rootDir, file.FileName);
+
                 await _storageService.UploadAsync(file.OpenReadStream(), remotePath);
 
-  
+
                 var fileStowage = new FileStowage
                 {
                     FileName = file.FileName,

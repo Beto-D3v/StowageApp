@@ -9453,23 +9453,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\roberto.macedo\\.nuget\\packages\\": {},
+    "C:\\Users\\windows\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Wetok\\projetos\\StowageApp\\Client\\StowageApp.Client.csproj",
+      "projectUniqueName": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\StowageApp.Client.csproj",
       "projectName": "StowageApp.Client",
-      "projectPath": "D:\\Wetok\\projetos\\StowageApp\\Client\\StowageApp.Client.csproj",
-      "packagesPath": "C:\\Users\\roberto.macedo\\.nuget\\packages\\",
-      "outputPath": "D:\\Wetok\\projetos\\StowageApp\\Client\\obj\\",
+      "projectPath": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\StowageApp.Client.csproj",
+      "packagesPath": "C:\\Users\\windows\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\roberto.macedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9483,8 +9486,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Wetok\\projetos\\StowageApp\\Shared\\StowageApp.Shared.csproj": {
-              "projectPath": "D:\\Wetok\\projetos\\StowageApp\\Shared\\StowageApp.Shared.csproj"
+            "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Shared\\StowageApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Shared\\StowageApp.Shared.csproj"
             }
           }
         }
@@ -9539,7 +9542,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[7.0.9, 7.0.9]"
+            "version": "[7.0.10, 7.0.10]"
           }
         ],
         "frameworkReferences": {
@@ -9547,7 +9550,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

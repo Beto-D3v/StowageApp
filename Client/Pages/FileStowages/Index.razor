@@ -9,10 +9,10 @@
 
 <h2>FileStowages</h2>
 
-<form @onsubmit="OnSubmit">
+<form @onsubmit="OnSubmit" enctype="multipart/form-data">
     <InputFile class="form-control" OnChange="OnInputFileChange" />
     @Message
-    <br/>
+    <br />
     <button class="btn btn-success" type="submit">Enviar</button>
 </form>
 
@@ -53,14 +53,8 @@ else
                         <button class="btn btn-danger"><a @onclick="@(async() => await DeleteFile(filestowage.ID))"> Delete</a></button>
                     </td>
                     <td>
-                        @if (filestowage.RemotePath.StartsWith("file:///"))
-                        {
-                            <a class="btn btn-primary" href="@filestowage.RemotePath" download="@filestowage.FileName">Download</a>
-                        }
-                        else
-                        {
-                            <button class="btn btn-primary" @onclick="@(async () => await DownloadFileFromURL(filestowage.FileName, filestowage.RemotePath))">Download</button>
-                        }
+                            @*<button class="btn btn-primary" @onclick="@(async () => await DownloadFileFromURL(filestowage.FileName))">Download</button>*@
+                        <button class="btn btn-primary"><a class="text-decoration-none text-white" href="/Folder/@filestowage.FileName" download>Download</a></button>
                     </td>
                 </tr>
             </tbody>
@@ -100,8 +94,9 @@ else
         StateHasChanged();
     }
 
-    private async Task DownloadFileFromURL(string fileName, string remotePath)
+    private async Task DownloadFileFromURL(string fileName)
     {
+        var remotePath = Path.Combine("wwwroot", "Folder");
         var fileUrl = $"{remotePath}/{fileName}";
         await JS.InvokeVoidAsync("triggerFileDownload", fileName, fileUrl);
     }

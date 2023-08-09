@@ -9,13 +9,13 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StowageApp.Server
 build_property.RootNamespace = StowageApp.Server
-build_property.ProjectDir = D:\Wetok\projetos\StowageApp\Server\
+build_property.ProjectDir = C:\Users\windows\Desktop\C#\Stowage\StowageApp\Server\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Wetok\projetos\StowageApp\Server
+build_property.MSBuildProjectDirectory = C:\Users\windows\Desktop\C#\Stowage\StowageApp\Server
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Wetok/projetos/StowageApp/Server/Pages/Error.cshtml]
+[C:/Users/windows/Desktop/C\#/Stowage/StowageApp/Server/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

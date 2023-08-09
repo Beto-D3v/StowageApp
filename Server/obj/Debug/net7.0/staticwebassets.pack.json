@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Server\\wwwroot\\Folder\\wwwroot\\Folder\\2-criar-pessoa1.png",
+      "PackagePath": "staticwebassets\\Folder\\wwwroot\\Folder\\2-criar-pessoa1.png"
+    },
+    {
+      "Id": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Server\\wwwroot\\Folder\\wwwroot\\Folder\\8-Alterar-serviços.png",
+      "PackagePath": "staticwebassets\\Folder\\wwwroot\\Folder\\8-Alterar-serviços.png"
+    },
+    {
+      "Id": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Server\\wwwroot\\Folder\\wwwroot\\Folder\\Avulsa.docx",
+      "PackagePath": "staticwebassets\\Folder\\wwwroot\\Folder\\Avulsa.docx"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.StowageApp.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.StowageApp.Server.props",
+      "PackagePath": "build\\StowageApp.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.StowageApp.Server.props",
+      "PackagePath": "buildMultiTargeting\\StowageApp.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.StowageApp.Server.props",
+      "PackagePath": "buildTransitive\\StowageApp.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
