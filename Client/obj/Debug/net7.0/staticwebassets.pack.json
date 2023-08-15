@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\StowageApp.Client.styles.css"
     },
     {
+      "Id": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\wwwroot\\Folder\\1.png",
+      "PackagePath": "staticwebassets\\Folder\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\wwwroot\\Folder\\Avulsa.docx",
+      "PackagePath": "staticwebassets\\Folder\\Avulsa.docx"
+    },
+    {
       "Id": "C:\\Users\\windows\\Desktop\\C#\\Stowage\\StowageApp\\Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

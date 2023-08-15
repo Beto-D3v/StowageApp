@@ -54,7 +54,8 @@ else
                     </td>
                     <td>
                             @*<button class="btn btn-primary" @onclick="@(async () => await DownloadFileFromURL(filestowage.FileName))">Download</button>*@
-                        <button class="btn btn-primary"><a class="text-decoration-none text-white" href="/Folder/@filestowage.FileName" download>Download</a></button>
+                            @*<a href="@($"/Download/{filestowage.FileName}")" download>@filestowage.FileName</a>*@
+                        <a href="@($"/api/filestowage/Download/{filestowage.FileName}")" download>@filestowage.FileName</a>
                     </td>
                 </tr>
             </tbody>
@@ -66,6 +67,7 @@ else
 
     FileStowage[]? fileStowages { get; set; }
     string Message = "Sem arquivo selecionado";
+    //Aqui, defino o IBrowserfile para pegar os dados de um arquivo vindo de um input
     IReadOnlyList<IBrowserFile>? selectedFiles;
 
     protected override async Task OnInitializedAsync()
@@ -94,30 +96,46 @@ else
         StateHasChanged();
     }
 
-    private async Task DownloadFileFromURL(string fileName)
-    {
-        var remotePath = Path.Combine("wwwroot", "Folder");
-        var fileUrl = $"{remotePath}/{fileName}";
-        await JS.InvokeVoidAsync("triggerFileDownload", fileName, fileUrl);
-    }
+    //private async Task DownloadFileFromURL(string fileName)
+    //{
+    //    try
+    //    {
+
+    //        using (var fileStream = await storageService.DownloadAsync(fileName))
+    //        {
+    //            string url = @"C:\Users\windows\Desktop\C#\Stowage\StowageApp\Client\wwwroot\Folder";
+    //            //byte[] fileBytes = new byte[fileStream.Length]; 
+    //            await JS.InvokeVoidAsync("triggerFileDownload", fileName, url);
+    //        }
+    //    }
+    //    catch (Exception ex)
+    //    {
+           
+    //        Console.WriteLine($"Error downloading file: {ex.Message}");
+    //    }
+    //}
 
     async Task OnSubmit()
     {
         if (selectedFiles == null || selectedFiles.Count == 0)
             return;
         
+        //O byte é uma forma de poder salvar dados do arquivo em um array de bytes, ficando mais fácil de manipular o arquivo
         byte[] bytes;
 
         foreach (var file in selectedFiles)
         {
+            //Forma de manipular um arquivo para realizar operações
             using (Stream stream = file.OpenReadStream())
             {
+                //Utilizando o MemoryStream facilito passar os dados do meu arquivo para o array
                 using (MemoryStream memoryStream = new MemoryStream())
                 {
                     await stream.CopyToAsync(memoryStream);
                     bytes = memoryStream.ToArray();
                 }
             }
+           //Utilizo o form para encaminhar as inrformações através de uma requisição HTTP
             var form = new MultipartFormDataContent();
             form.Add(new ByteArrayContent(bytes, 0, bytes.Length), "File", file.Name);
             var response = await http.PostAsync("/api/filestowage",form);

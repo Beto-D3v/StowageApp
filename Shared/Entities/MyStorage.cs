@@ -196,4 +196,17 @@ public abstract class MyStorageBase : IDisposable
         //excluir o arquivo a partir do Stowage
     }
 
+    //public async Task<Stream> DownloadAsync(string remotePath)
+    //{
+    //    var fs = GetStorage();
+
+    //    if (!await fs.Exists(remotePath))
+    //    {
+    //        throw new Exception("Arquivo não existente");
+    //    }
+
+    //    var stream = await fs.OpenRead(remotePath);
+    //    return stream;
+    //}
+
 }

@@ -19,7 +19,8 @@ builder.Services.AddScoped<SeedingServices>();
 builder.Services.AddScoped<MyStorageBase, MyLocalDiskStorage>(provider =>
 {
     //string rootDir = @"C:\Users\windows\Desktop\C#\Files";
-    string rootDir = Path.Combine("wwwroot", "Folder");
+    //string rootDir = Path.Combine("wwwroot", "Folder");
+    string rootDir = @"C:\Users\windows\Desktop\C#\Stowage\StowageApp\Client\wwwroot\Folder";
     return new MyLocalDiskStorage(rootDir);
 });
 

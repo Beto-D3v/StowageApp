@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.JSInterop;
 using Stowage;
 using StowageApp.Server.Data;
 using StowageApp.Server.Services;
 using StowageApp.Shared.Entities;
+using System.Diagnostics.CodeAnalysis;
 
 namespace StowageApp.Server.Controllers
 {
@@ -99,6 +101,46 @@ namespace StowageApp.Server.Controllers
             }
         
         }
+
+        //[HttpPost]
+        //public async Task<ActionResult<FileStowage>> DownloadFile(string file)
+        //{
+        //    try
+        //    {
+
+        //        var remotePath = Path.Combine(rootDir, file);
+
+        //        await _storageService.DownloadAsync(remotePath);
+
+        //        return Ok();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest($"Erro ao fazer o download do arquivo: {ex.Message}");
+        //    }
+
+        //}
+
+        [HttpGet("Download/{fileName}")]
+        public async Task<IActionResult> DownloadFile(string fileName)
+        {
+            try
+            {
+                //Abro o fluxo de bytes
+                var fileStream = await _storageService.OpenAsync(fileName);
+                
+               //Aqui utilizo o método File para passar o fluxo de bytes e o nome do arquivo que será baixado. Ao invés de usar um endereço, utilizou-se o fluxo de bytes
+                return File(fileStream, "application/octet-stream", fileName);
+
+                
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions and return an appropriate response
+                return StatusCode(500, $"Error downloading file: {ex.Message}");
+            }
+        }
+
     }
 
 
